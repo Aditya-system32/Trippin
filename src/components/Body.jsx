@@ -1,12 +1,10 @@
-
-
+import HeroSection from "./HeroSection";
 const Body = () => {
-    return(
-        <div className="body-container">
-           
-            <h1>Welcome to Lombok</h1>
-        </div>
-    )
-}
+  return (
+    <>
+        <HeroSection />
+    </>
+  );
+};
 
-export default Body
+export default Body;

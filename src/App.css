@@ -11,22 +11,38 @@
 }
 
 .header-container > h3{
-  margin:10px
+  margin:10px;
+  margin-left: 20px;
 }
 
-.header-container > ul{
+.nav-bar-container{
   display: flex;
-  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  
 }
 
-.header-container > ul > li {
-  padding: 10px;
+.nav-bar-container > button {
+  width: 90px;
+  height: 30px;
+  border-radius: 10px;
+  border:none;
+  background-color: white;
+  cursor: pointer;
+  margin:10px;
+  color: #878D95
+}
+
+.nav-bar-container > button:hover{
+  border:1px solid lightgrey;
+  color:black
 }
 
 .button-container{
   margin-top: auto;
   margin-bottom: auto;
   display: flex;
+  margin-right: 5px;
 }
 
 .button-container > span{
@@ -38,12 +54,17 @@
   margin: 6px;
   padding: 7px;
   width: 90px;
-  border-radius: 10px;
+  border-radius: 20px;
   cursor: pointer;
 }
 
 .login-button {
   border: 1px solid black;
+  background-color: white;
+  color: black;
+  font-weight: 600;
+  height: 35px;
+  
 }
 
 .register-button{
@@ -57,12 +78,69 @@
   background-image: url("backgroundImage.jpg");
   height: 100vh;
   background-size:100% 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  display: flex;
+  justify-content: center;
+  
 }
 
-.backgroundImage{
+.body-inner-container{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1980px;
   width: 100%;
-  border-top-left-radius: 15px;
-  margin-top: -5px;
-  height: 100vh;
-  border-top-right-radius: 15px;
 }
+
+.body-header-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 50px;
+  margin-top: 4%;
+}
+
+.heading-1{
+  font-size: 10rem;
+  color: white;
+  font-weight: 500;
+  line-height: 80%;
+}
+
+.heading-2{
+  font-size: 10rem;
+  color: white;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.heading-3{
+  color: white;
+  font-weight: 400;
+  margin-top: 20px;
+  font-size: 38px;
+}
+
+.form-container{
+  width: 60%;
+  display: flex;
+  margin-top: 4%;
+}
+
+.form-inner-container{
+  margin-top:30px;
+  width:75%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  height: 700px;
+  padding: 20px;
+}
+
+.form-select{
+  margin-left: 40px;
+  font-size: 30px;
+  border-style: none !important
+}
+
