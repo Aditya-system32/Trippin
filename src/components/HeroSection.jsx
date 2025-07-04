@@ -1,3 +1,5 @@
+import { Hotel, MapPin, Calendar, Moon } from "lucide-react";
+
 const HeroSection = () => {
   return (
     <div className="body-container">
@@ -9,16 +11,152 @@ const HeroSection = () => {
         </div>
         <div className="form-container">
           <form className="form-inner-container">
-            <div style={{ display: "flex", alignItems: "center" }}>
-              <p>icon</p>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                marginTop: "10px",
+              }}
+            >
+              <Hotel style={{ marginTop: "4px" }} />
+              <h2 style={{ marginLeft: "20px", fontWeight: "500" }}>
+                Discover Hotels
+              </h2>
             </div>
-            <label>City Or Hotel Name</label>
-            <input placeholder="Hotel Name" />
-            <div>
-              <p>Check - In</p>
-              <input placeholder="sun" />
+            <label style={{ marginTop: "25px", fontSize: "20px" }}>
+              City Or Hotel Name
+            </label>
+            <div style={{ display: "flex" }}>
+              <MapPin
+                style={{
+                  position: "absolute",
+                  marginTop: "14px",
+                  marginLeft: "10px",
+                  width: "20px",
+                  height: "20px",
+                }}
+              />
+              <input
+                placeholder="Hotel Name"
+                style={{
+                  height: "20px",
+                  marginTop: "5px",
+                  padding: "10px",
+                  paddingLeft: "40px",
+                  border: "none",
+                  backgroundColor: "#F5F6FD",
+                  borderRadius: "8px",
+                  outline: "none",
+                  width: "100%",
+                }}
+              />
             </div>
+
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                marginTop: "25px",
+              }}
+            >
+              <div style={{ width: "48%", flexDirection: "column" }}>
+                <label style={{ marginTop: "25px", fontSize: "20px" }}>
+                  Check - In
+                </label>
+                <input
+                  placeholder="sun"
+                  type="date"
+                  style={{
+                    height: "40px",
+                    marginTop: "5px",
+                    padding: "10px",
+                    paddingLeft: "10px",
+                    border: "none",
+                    backgroundColor: "#F5F6FD",
+                    borderRadius: "8px",
+                    outline: "none",
+                    width: "100%",
+                    boxSizing: "border-box",
+                  }}
+                />
+              </div>
+              <div
+                style={{
+                  width: "48%",
+                  display: "flex",
+                  flexDirection: "column",
+                }}
+              >
+                <label style={{ fontSize: "20px" }}>Check - Out</label>
+                <Moon
+                  style={{
+                    position: "absolute",
+                    marginTop: "45px",
+                    marginLeft: "10px",
+                    width: "20px",
+                    height: "20px",
+                  }}
+                />
+                <input
+                  placeholder="night"
+                  style={{
+                    height: "40px",
+                    marginTop: "5px",
+                    padding: "10px",
+                    paddingLeft: "40px",
+                    border: "none",
+                    backgroundColor: "#F5F6FD",
+                    borderRadius: "8px",
+                    outline: "none",
+                    width: "100%",
+                    boxSizing: "border-box",
+                  }}
+                />
+              </div>
+            </div>
+            <label style={{ marginTop: "25px", fontSize: "20px" }}>
+              Guests And Rooms
+            </label>
+            <div style={{ display: "flex" }}>
+              <Calendar
+                style={{
+                  position: "absolute",
+                  marginTop: "14px",
+                  marginLeft: "10px",
+                  width: "20px",
+                  height: "20px",
+                }}
+              />
+              <input
+                placeholder="3 Adult, 1 Child And 1 Room"
+                style={{
+                  height: "20px",
+                  marginTop: "5px",
+                  padding: "10px",
+                  paddingLeft: "40px",
+                  border: "none",
+                  backgroundColor: "#F5F6FD",
+                  borderRadius: "8px",
+                  outline: "none",
+                  width: "100%",
+                }}
+              />
+            </div>
+            <button
+              style={{
+                borderRadius: "30px",
+                cursor: "pointer",
+                padding: "18px",
+                backgroundColor: "black",
+                color: "white",
+                marginTop: "40px",
+              }}
+            >
+              {" "}
+              Search Hotel
+            </button>
           </form>
+          <div></div>
         </div>
       </div>
     </div>
