@@ -156,7 +156,27 @@ const HeroSection = () => {
               Search Hotel
             </button>
           </form>
-          <div></div>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              width: "55%",
+              marginLeft: "auto",
+              marginRight: "auto",
+              flexWrap:"wrap",
+              marginTop:"30px",
+              gap:10
+            }}
+            className="form-below-button"
+          >
+            <button>LANDSCAPE</button>
+            <button>EXCURISON</button>
+            <button>JOURNEY</button>
+            <button>EXCITING</button>
+            <button>TRAVEL</button>
+            <button>BEACH</button>
+            
+          </div>
         </div>
       </div>
     </div>
